@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['login'])){
-  header('Location: http://localhost/praktekweb/index.php');
+  header('Location: http://localhost/PRAKTEKWEB/index.php');
 }
 ?>
 <!doctype html>

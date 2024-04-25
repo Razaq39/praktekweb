@@ -2,10 +2,11 @@
 session_start();
 $email = $_POST['email'];
 $password = $_POST['password'];
-if($email == "idris@usm.ac.id" && $password == "123"){
+$umur = $_POST['umur'];
+if($email == "Razaq@usm.ac.id" && $password == "367" && $umur >=16 && $umur <=44){ 
     // echo "<b>Login Berhasil</b>";
     $_SESSION['login'] = true;
-    header('Location: http://localhost/praktekweb/dashboard.php');
+    header('Location: http://localhost/PRAKTEKWEB/dashboard.php');
 }else{
-    header('Location: http://localhost/praktekweb/index.php?error=Login Gagal');
+    header('Location: http://localhost/PRAKTEKWEB/index.php?error=Login Gagal');
 }
